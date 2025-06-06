@@ -229,7 +229,7 @@ a{
   }
   .about {
     flex-direction: column;
-    padding: 80px 5% 0;
+    padding: 10px 5% 0;
     height: auto;
     text-align: center;
   }
