@@ -37,11 +37,11 @@ a{
 }
 .navbar ul {
     display:flex;
-
+  
 }    
 .navbar ul li {
     list-style: none;
-    margin-left: 35px;
+   margin: 10px ;
 
 }
 .navbar ul li a {
@@ -56,19 +56,23 @@ a{
 .home{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100vh;
     padding: 60px 9% 0;
     color: #fff;
-  justify-content: flex-end; /* Add this line */
-
+    margin-top: -100px;
 }
-
+.home-info {
+    flex: 1;
+    max-width: 60%;
+}
 .home-info h1{
     font-size: 55px;
+  
 }
 .home-info h2{
     font-size: 32px;
-    margin-top: -10px;
+    
 }
 .home-info p {
     font-size: 16px;
@@ -121,17 +125,25 @@ a{
     border-radius: 50% ;
     justify-content: center;
     overflow: hidden;
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: flex-end;
 }
 .zoom-img {
     width: 300px;
     height: 300px;
+    border-radius: 50%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .zoom-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
     transition: all .3s ease;
   }
   
@@ -145,6 +157,7 @@ a{
     height: 120vh;
     padding: 60px 9% 0;
     color: #fff;
+    
 }
 
 .about-info h1{
@@ -160,9 +173,7 @@ a{
     margin: 10px 0 25px;
 }
 .about .about-info {
-    top: 100px;
-    position:relative;
-    
+    position: relative;
 }
 #top{
     position: fixed;
@@ -192,7 +203,39 @@ a{
 .footer .info .contactme{
     margin: 16px;
 }
-
+#skills{
+    list-style: none;
+    padding-left: 0;
+}
+.gallery {
+  width: 250px;
+   height: 300px;
+   background-color: whitesmoke;
+   background-size: cover;margin: 20px auto;border: 2px solid black;
+   border-radius: 10px;
+   cursor: pointer;
+   animation-name: ptp;    /* שם האנימציה */
+   animation-duration: 18s; /* משך האנימציה */
+   animation-iteration-count: infinite; /* מספר הפעמים שהאנימציה תתבצע */
+}
+@keyframes ptp{
+            0% {
+                background-image: url('images/Css.jpg');
+            }
+            30%{
+                background-image: url('images/Html.jpg');
+            }
+            60%{
+                background-image: url('images/JavaScript.jpg');
+                width: 250px;
+                height: 300px;
+              }
+            100%{
+                background-image: url('images/Java.jpg');
+                width: 300px;
+                height: 200px;
+            }
+        }
 /* Responsive styles for mobile devices */
 @media (max-width: 600px) {
   .navbar {
@@ -214,18 +257,16 @@ a{
   }
   .home {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 80px 5% 0;
     height: auto;
     text-align: center;
   }
-  .home-info h1 {
-    font-size: 32px;
-  }
-  .home-info h2 {
-    font-size: 22px;
-  }
-  .home-info h3 {
-    font-size: 18px;
+  .home-info {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
   }
   .img-item, .zoom-img {
     width: 180px;
@@ -240,7 +281,7 @@ a{
   .zoom-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* or 'contain' if you want the whole image */
     display: block;
   }
   .about {
