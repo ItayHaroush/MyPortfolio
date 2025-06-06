@@ -18,12 +18,14 @@ a{
 }
 
 .navbar {
-    position: fixed;
+    position: block;
     left: 0;
     top: 0;
     width: 100%;
     padding: 25px 9%;
     display: flex;
+    flex-direction: row;
+    background: rgba(33, 36, 38, 0.8);
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -113,10 +115,8 @@ a{
 
  .img-item {
     position:relative;
-    margin: auto;
+    margin: o auto;
     border-radius: 50% ;
-    
-    
     justify-content: center;
     overflow: hidden;
 }
@@ -158,7 +158,7 @@ a{
     margin: 10px 0 25px;
 }
 .about .about-info {
-    left: 300px;
+    top: 100px;
     position:relative;
     
 }
@@ -196,16 +196,19 @@ a{
   .navbar {
     flex-direction: column;
     padding: 15px 5%;
+    
   }
   .navbar ul {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
     margin-top: 10px;
+  
   }
   .navbar ul li {
     margin-left: 0;
     margin-bottom: 10px;
+    
   }
   .home {
     flex-direction: column;
@@ -232,6 +235,7 @@ a{
     padding: 10px 5% 0;
     height: auto;
     text-align: center;
+    text-decoration: none;
   }
   .about-info h1 {
     font-size: 32px;
