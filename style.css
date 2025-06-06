@@ -228,7 +228,7 @@ a{
     margin: 20px auto;
   }
   .about {
-    flex-direction: column;
+    flex-direction: row;
     padding: 10px 5% 0;
     height: auto;
     text-align: center;
