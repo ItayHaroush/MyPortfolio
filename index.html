@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        h1,h2{
+            text-align: center;
+            color: darkblue;
+        }
+        body{
+            background-color: lightblue;
+        }
+        #nav{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            width: 280px;margin: 20px auto;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+        a{
+            width: 40px;
+            margin: auto 10px 0;
+            padding: 10px 20px;
+            background-color: #cecbd486;
+            color: #6f0fcec5;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+         
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Home</h1>
+    <h2>Image Gallery</h2>
+    <div id="nav">
+    <a href="ptp.html" >Ptp</a> 
+    <a href="ptp2.html" >Ptp2</a>
+    <a href="coastToCoast.html" >Flight</a>
+    </div>
+    <div>
+        <img src="images/2B4A0780.JPG" id="a" alt="">
+        <img src="images/2B4A0820.JPG" id="b" alt="">
+        <img src="images/2B4A0868.JPG" id="c" alt="">
+    </div>
+    
+</body>
+</html>
