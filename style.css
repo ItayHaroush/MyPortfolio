@@ -48,7 +48,7 @@ a{
     font-size: 20px;
     font-weight: 500;
     transition: .5s;
-    margin-left: 220px;
+    margin: 10px;    
 }
 .navbar ul li:hover a {
     color: #f0933d;
@@ -87,7 +87,6 @@ a{
 }
 .btn {
     display: inline-block;
-    
     padding: 10px 10px;
     background: #f0933d;
     border: 2px solid #f0933d;
@@ -104,7 +103,9 @@ a{
     box-shadow: none;
 }
 .home-info .btn-sci .sci {
-    margin-left: 50px;
+    display: inline-block;
+    margin-right: 100px;
+
 }
 .home-info .btn-sci .sci a{
     display: inline-flex;
@@ -196,6 +197,7 @@ a{
     color:white;
     font-size: 26px;
     padding: 10px;
+    top: 150px;
 }
 .info a{
     color: white;
@@ -212,7 +214,7 @@ a{
     display: flex;
     align-items: center;
     width: 50%;
-    height: 50%;
+    height: 250px;
     background-color: #1f2426;
     border: 5px solid #f0933d;
     padding: 7%;;
@@ -287,7 +289,7 @@ a{
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    padding: 15px 5%;
+    padding: 25px 5%;
     
   }
   .navbar ul {
@@ -301,6 +303,9 @@ a{
     margin-left: 0;
     margin-bottom: 10px;
     
+  }
+  .navbar ul li a {
+    margin: 130px;
   }
   .home {
     flex-direction: column;
