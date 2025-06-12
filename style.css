@@ -65,20 +65,29 @@ a{
     color: #fff;
 }
 .project-header {
+    display: block;
     text-align: center;
+    margin-top: 200px;
     margin-bottom: 20px;
 }
 .project-header h1{
     font-size: 45px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 .project-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: -10px 30px 30px;
     margin-bottom: 20px;
     
+}
+.img-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .project-info a{
     width: 150px;
@@ -231,6 +240,9 @@ a{
     color: white;
     padding: 20px;
 }
+.footer-project{
+    margin-top: 300px;
+}
 .footer{
     height: 200px;
     padding: 30px;
@@ -262,7 +274,7 @@ a{
     background-color: #1f2426;
     border: 5px solid #f0933d;
     padding: 5%;;
-    margin: 0px 0px 20px 25%; 
+    margin: 0 0 50px 0; 
     border-radius: 10px;
 }
 .contactme input{
@@ -392,6 +404,9 @@ a{
   }
   .about-info h2 {
     font-size: 22px;
+  }
+  .contactme{
+    margin-left: 85px;
   }
   .footer {
     margin-left: 0;
