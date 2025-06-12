@@ -53,13 +53,29 @@ a{
 .navbar ul li:hover a {
     color: #f0933d;
 }
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 9% 0 200px;
+    color: #fff;
+}
+.project-header h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .home{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    padding: 60px 9% 0;
+    padding: 60px 9% 5%;
     color: #fff;
     margin-top: -100px;
 }
@@ -69,7 +85,7 @@ a{
     padding: 0 20px 20px;  
     display: flex;  
     flex-direction: column;
-    justify-content: center;  
+    justify-content: center;
 }
 .home-info h1{
     font-size: 55px;
