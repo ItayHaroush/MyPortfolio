@@ -408,7 +408,8 @@ a{
     font-size: 22px;
   }
   .contactme{
-    margin-left: 85px;
+    margin-left: 10px;
+    width: 95%;
   }
   .footer {
     margin-left: 0;
