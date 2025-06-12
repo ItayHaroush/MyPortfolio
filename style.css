@@ -44,7 +44,7 @@ a{
 .navbar ul li {
     list-style: none;
     margin: 10px ;
-
+    
 }
 .navbar ul li a {
     font-size: 20px;
@@ -64,8 +64,9 @@ a{
     padding: 60px 9% 0 20px;
     color: #fff;
 }
-#project-headerH1{
-    margin-left: 100px;
+.project-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 .project-header h1{
     font-size: 45px;
@@ -75,14 +76,12 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: -10px 0 30px 30px;
+    padding: -10px 30px 30px;
     margin-bottom: 20px;
     
 }
 .project-info a{
     width: 150px;
-    display: inline-block;
-    padding: 10px 20px;
     background: #f0933d;
     border: 2px solid #f0933d;
     border-radius: 40px;
@@ -92,7 +91,7 @@ a{
     font-weight: 600;
     transition: .5s;
     margin-top: 20px;
-    text-align: center;
+   
 }
 
 .home{
@@ -350,7 +349,7 @@ a{
     
   }
   .navbar ul li a {
-    margin: 150px;
+    margin: 120px;
   }
   .home {
     flex-direction: column;
