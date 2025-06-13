@@ -68,13 +68,13 @@ a{
 .project-header {
     display: block;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px;
     padding: 5px;
     
 }
 .project-header h1{
     font-size: 45px;
-    margin: 20px;
+    margin: 100px 0 0 0;
 }
 .project-info {
     display: flex;
@@ -407,6 +407,9 @@ a{
   .about-info h2 {
     font-size: 22px;
   }
+  .project-header{
+    margin-top: 100px;
+}
   .contactme{
     margin-left: 10px;
     width: 95%;
