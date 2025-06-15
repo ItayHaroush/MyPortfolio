@@ -323,6 +323,7 @@ a{
    animation-name: ptp;    /* שם האנימציה */
    animation-duration: 25s; /* משך האנימציה */
    animation-iteration-count: infinite; /* מספר הפעמים שהאנימציה תתבצע */
+   
 }
 
 @keyframes ptp{
@@ -345,7 +346,8 @@ a{
               }
             100%{
                 background-image: url('images/Java.jpg');
-                width: 500px;
+                width: 350px;
+                height: 250px;
             }
         }
 /* Responsive styles for mobile devices */
