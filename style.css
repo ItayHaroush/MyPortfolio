@@ -315,32 +315,37 @@ a{
 }
 .gallery {
   width: 250px;
-   height: 300px;
+   height: 350px;
    background-color: whitesmoke;
    background-size: cover;margin: 20px auto;border: 2px solid black;
    border-radius: 10px;
    cursor: pointer;
    animation-name: ptp;    /* שם האנימציה */
-   animation-duration: 18s; /* משך האנימציה */
+   animation-duration: 25s; /* משך האנימציה */
    animation-iteration-count: infinite; /* מספר הפעמים שהאנימציה תתבצע */
 }
 
 @keyframes ptp{
             0% {
-                background-image: url('images/Css.jpg');
+                background-image: url('images/FrontEndDevelopment.jpg');
             }
             30%{
+                background-image: url('images/React.jpg');
+            }
+            50%{
+                background-image: url('images/Css.jpg');
+            }
+            70%{
                 background-image: url('images/Html.jpg');
             }
-            60%{
+            90%{
                 background-image: url('images/javaScript.jpg');
                 width: 250px;
-                height: 300px;
+                height: 350px;
               }
             100%{
                 background-image: url('images/Java.jpg');
-                width: 300px;
-                height: 200px;
+                width: 500px;
             }
         }
 /* Responsive styles for mobile devices */
