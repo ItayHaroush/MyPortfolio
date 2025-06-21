@@ -321,22 +321,25 @@ a{
    border-radius: 10px;
    cursor: pointer;
    animation-name: ptp;    /* שם האנימציה */
-   animation-duration: 25s; /* משך האנימציה */
+   animation-duration: 30s; /* משך האנימציה */
    animation-iteration-count: infinite; /* מספר הפעמים שהאנימציה תתבצע */
-   
+  
 }
 
 @keyframes ptp{
             0% {
                 background-image: url('images/FrontEndDevelopment.jpg');
             }
-            30%{
+            18%{
+                background-image: url('images/TypeScript.jpg');
+            }
+            36%{
                 background-image: url('images/React.jpg');
             }
-            50%{
+            54%{
                 background-image: url('images/Css.jpg');
             }
-            70%{
+            72%{
                 background-image: url('images/Html.jpg');
             }
             90%{
