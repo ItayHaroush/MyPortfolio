@@ -59,7 +59,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     background: linear-gradient(135deg, #1f2426, #2c3133);
     padding: 60px 9% 0 0px;
     color: #fff;
@@ -67,9 +66,18 @@ a{
 
 }
 .project-container {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px 30px;
+    border: 2px solid #f0933d;
+    border-radius: 10px;
+    margin: 20px 0 0 20px ;
+    width: 80%;
+    
 }
+
 .project-header {
     display: block;
     text-align: center;
@@ -79,7 +87,7 @@ a{
 }
 .project-header h1{
     font-size: 45px;
-    margin: 100px 0 0 0;
+    
 }
 .project-info {
     display: flex;
@@ -422,6 +430,7 @@ a{
   .about-info h2 {
     font-size: 22px;
   }
+
   .project-header{
     margin-top: 100px;
 }
