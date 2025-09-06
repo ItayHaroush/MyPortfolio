@@ -81,12 +81,13 @@ a{
 .project-header {
     display: block;
     text-align: center;
-    margin: 10px;
+    margin: 0px;
     padding: 5px;
     
 }
 .project-header h1{
     font-size: 45px;
+   
     
 }
 .project-info {
@@ -95,7 +96,8 @@ a{
     align-items: center;
     justify-content: center;
     padding: -10px 30px 30px;
-    margin-bottom: 20px;
+    margin : 10px;
+    text-align: center;
     
 }
 .img-project {
@@ -103,6 +105,7 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 .project-info a{
     width: 150px;
