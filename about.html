@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Student Portifilo">
-    <meta keywords= "Portfolio, CV, Engineering, Front-end, Software">
+    <meta name="description" content="About Itay Haroush - Full Stack Developer">
+    <meta name="keywords" content="Portfolio, CV, Engineering, Front-end, Software">
     <meta name="author" content="Itay Haroush">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -12,86 +12,71 @@
     <title>About Itay Haroush</title>
 </head>
 
-
 <body>
-
-
     <div id="header1">
         <nav class="navbar">
-            <a href="" class="logo">Portfolio.</a>
+            <a href="index.html" class="logo">Portfolio.</a>
             <ul>
-                <li ><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="myProjects.html">MyProjects</a></li>
+                <li><a href="myProjects.html">Projects</a></li>
             </ul>
         </nav>
     </div>
 
-
     <section class="about">
         <div class="about-info">
-            <div >
             <h2>About Me</h2>
             <p>
                 I am Itay Haroush, a Full-Stack Software Engineering student based in Israel.
                 After several years managing a professional kitchen serving 150 diners daily, I decided to follow my true passion—technology and software development.
-
-                My journey started in 2023 at Kinneret Technological College (C#), and today I’m continuing my studies at the College of Management, Haifa, majoring in Full-Stack Software Engineering.
-
+            </p>
+            <p>
+                My journey started in 2023 at Kinneret Technological College (C#), and today I'm continuing my studies at the College of Management, Haifa, majoring in Full-Stack Software Engineering.
+            </p>
+            <p>
                 I enjoy building end-to-end web applications with modern technologies (JavaScript, React, PHP, MySQL, HTML/CSS, C#, Java, TypeScript), focusing on usability, security, and performance.
                 Open to opportunities where I can grow as a Frontend or Full-Stack Developer and contribute to impactful projects.
             </p>
+            
             <h3>Skills</h3>
             <ul id="skills">
-                <li>#C</li>
-                <li>#Java</li>
-                <li>#HTML</li>
-                <li>#JavaScript</li>
-                <li>#TypeScript</li>
-                <li>#React</li>
-                <li>#CSS</li>
-                <li>#Php</li>
-                <li>#SQL</li>
+                <li>C#</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>SQL</li>
             </ul>
+            
+            <div class="gallery"></div>
         </div>
-        <div class="gallery"></div>
     </section>
 
-        
+    <section id="contact">
+        <div class="contactme">
+            <form action="https://formspree.io/f/xqabeokz" method="POST">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-<div>
-    <div class="footer">
-        
-          <div class="contactme">
-           <!-- <a href="mailto:itay666@icloud.com?subject=WebSiteProfileItayHaroush&body=type here ..."><i class='bx bx-mail-send'></i></a>
-         -->
-                    <form action="https://formspree.io/f/xqabeokz" method="POST">
-                    <input type="email" name="email" placeholder=" Youe Email" required>
-                    <textarea name="message" placeholder="Your Message" rows="4" cols="4" required></textarea>
-                    <button type="submit">Send</button>
-                    </form> 
-          </div>
-        <div >
-        <span class="info">
-            <a style="text-decoration: none;" href="https://www.itaysolutions.com/" target="_blank">
-            <img src="images/1.jpeg" alt="logo" style="width: 75px; height: 75px; border-radius: 20%;">   
-            <h6>&copy; Itay Haroush - Development Solutions</h6>
-            <h6>All rights reserved.</h6>
+    <footer class="footer">
+        <div class="info">
+            <a href="https://www.itaysolutions.com/" target="_blank">
+                <img src="images/1.jpeg" alt="Itay Solutions Logo" style="width: 75px; height: 75px; border-radius: 20%;">
+                <h6>&copy; 2025 Itay Haroush - Development Solutions</h6>
+                <h6>All rights reserved.</h6>
             </a>
-        </span>
-        <span>
-            <h3><a id="top" href="#header1"><i class='bx bxs-to-top'></i></a></h3>
-        </span>
-    </div>
-</div>
-    
+        </div>
+    </footer>
 
-
-
-
-
-
-
+    <a id="top" href="#header1"><i class='bx bxs-to-top'></i></a>
 
 </body>
 </html>
