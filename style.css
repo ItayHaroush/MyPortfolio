@@ -157,6 +157,142 @@ a {
     margin-top: 10px;
 }
 
+/* Project Filters */
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #f0933d;
+    background: transparent;
+    color: #f0933d;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #f0933d;
+    color: #1f242d;
+    box-shadow: 0 0 15px rgba(240, 147, 61, 0.3);
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.project-card {
+    background: rgba(44, 49, 51, 0.5);
+    border-radius: 15px;
+    border: 1px solid #333;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #f0933d;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(240, 147, 61, 0.15);
+}
+
+.project-card-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card-image {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+    background: #2c3133;
+}
+
+.project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-tags {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.project-tag {
+    background: rgba(240, 147, 61, 0.9);
+    color: #1f242d;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.project-card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-card-content h2 {
+    color: #f0933d;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-card-content p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+.project-card-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card-btns .btn,
+.project-card-btns .btn-light {
+    padding: 8px 18px;
+    font-size: 13px;
+}
+
+.btn-small {
+    padding: 6px 14px !important;
+    font-size: 12px !important;
+}
+
+.project-tech {
+    display: block;
+    margin-top: 10px;
+    color: #888;
+    font-size: 12px;
+}
+
+
 .home {
     display: flex;
     align-items: center;
@@ -618,6 +754,10 @@ a {
 
     .project-info h2 {
         font-size: 18px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     .contactme {
