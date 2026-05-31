@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Student Portfolio">
+    <meta name="description" data-i18n-content="meta.projectsDesc" content="Itay Haroush - Projects Portfolio">
     <meta name="keywords" content="Portfolio, CV, Engineering, Front-end, Software">
     <meta name="author" content="Itay Haroush">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="images/user-square.png">
-    <title>My Projects</title>
+    <title data-i18n="meta.projectsTitle">My Projects</title>
 </head>
 <body>
 
@@ -17,9 +17,13 @@
         <nav class="navbar">
             <a href="index.html" class="logo">Portfolio.</a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="myProjects.html">Projects</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="myProjects.html" data-i18n="nav.projects">Projects</a></li>
+                <li class="lang-switcher">
+                    <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">עב</button>
+                </li>
             </ul>
         </nav>
      </div>
@@ -27,18 +31,17 @@
     <section class="project"> 
         <div class="project-container">
             <div class="project-header">
-                <h1>My Projects</h1>
-                <p>Here are some of the projects I have worked on during my studies.<br>
-                    Filter by type to explore.</p>
+                <h1 data-i18n="projects.title">My Projects</h1>
+                <p data-i18n="projects.introHtml" data-i18n-html>Here are some of the projects I have worked on during my studies.<br>Filter by type to explore.</p>
             </div>
 
             <!-- Filter Buttons -->
             <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="webapp">Web App</button>
-                <button class="filter-btn" data-filter="landing">Business Landing</button>
-                <button class="filter-btn" data-filter="portfolio">Portfolio</button>
-                <button class="filter-btn" data-filter="game">Game</button>
+                <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
+                <button class="filter-btn" data-filter="webapp" data-i18n="filter.webapp">Web App</button>
+                <button class="filter-btn" data-filter="landing" data-i18n="filter.landing">Business Landing</button>
+                <button class="filter-btn" data-filter="portfolio" data-i18n="filter.portfolio">Portfolio</button>
+                <button class="filter-btn" data-filter="game" data-i18n="filter.game">Game</button>
             </div>
 
             <!-- Projects Grid -->
@@ -52,9 +55,25 @@
     <script type="application/json" id="projectsData">
     [
         {
+            "id": "buildix",
+            "title": "Buildix",
+            "description": {
+                "en": "Business management for contractors and trades: quotes, projects, clients, leads, work log, and a personal business page — all in one place, from any phone or computer.",
+                "he": "מערכת לניהול עסק לקבלנים, שיפוצניקים ובעלי מקצוע: הצעות מחיר, פרויקטים, לקוחות ולידים, יומן עבודה ודף עסקי אישי – הכל במקום אחד, מכל טלפון ומחשב."
+            },
+            "url": "https://www.buildix.site",
+            "image": "images/buildixLogo.png",
+            "type": "webapp",
+            "tags": ["Featured"],
+            "tech": "React, Web App"
+        },
+        {
             "id": "ads-maker",
             "title": "Ads-Maker",
-            "description": "מחולל מודעות חכם בעברית • Web app with landing page",
+            "description": {
+                "en": "Smart Hebrew ad generator • Web app with landing page",
+                "he": "מחולל מודעות חכם בעברית • אפליקציית ווב עם דף נחיתה"
+            },
             "url": "https://ads-maker.vercel.app",
             "image": "images/ads.png",
             "type": "webapp",
@@ -64,7 +83,10 @@
         {
             "id": "appointed",
             "title": "Appointed",
-            "description": "אפליקציית ניהול תורים • Web app with landing page",
+            "description": {
+                "en": "Appointment management app • Web app with landing page",
+                "he": "אפליקציית ניהול תורים • אפליקציית ווב עם דף נחיתה"
+            },
             "url": "https://appointed.cloud",
             "image": "images/6A06B61A-A714-4815-BFCC-D37DEE62560B_1_105_c.jpeg",
             "type": "webapp",
@@ -74,7 +96,10 @@
         {
             "id": "takeeat",
             "title": "TakeEat",
-            "description": "אפליקציית הזמנות אוכל • Web app with landing page",
+            "description": {
+                "en": "Food ordering app • Web app with landing page",
+                "he": "אפליקציית הזמנות אוכל • אפליקציית ווב עם דף נחיתה"
+            },
             "url": "https://takeeat.co.il",
             "landingUrl": "https://takeeat.co.il/landing",
             "image": "images/50F7E017-7ACE-42A9-B383-E8D1620D4586_1_105_c.jpeg",
@@ -85,7 +110,10 @@
         {
             "id": "chefsync-2",
             "title": "ChefSync IL 2.0",
-            "description": "אפליקציית ווב לניהול קייטרינג • Web app with landing page",
+            "description": {
+                "en": "Catering management web app • Web app with landing page",
+                "he": "אפליקציית ווב לניהול קייטרינג • אפליקציית ווב עם דף נחיתה"
+            },
             "url": "https://chefsyncil.great-site.net/landingPage.php?i=1",
             "image": "images/ChefSyncIL.png",
             "type": "webapp",
@@ -95,7 +123,10 @@
         {
             "id": "app-weather",
             "title": "App Weather",
-            "description": "אפליקציית מזג אוויר פשוטה המציגה תחזית יומית לשבוע עם עיצוב מודרני ותגובותי.",
+            "description": {
+                "en": "Simple weather app with a daily forecast for the week, modern responsive design.",
+                "he": "אפליקציית מזג אוויר פשוטה המציגה תחזית יומית לשבוע עם עיצוב מודרני ותגובותי."
+            },
             "url": "https://web2026-sandy.vercel.app",
             "image": "images/logoAppWeather.png",
             "type": "webapp",
@@ -105,7 +136,10 @@
         {
             "id": "bar-ben-abu",
             "title": "Bar Ben Abu",
-            "description": "דף נחיתה עסקי לעיצוב פנים • Business landing page",
+            "description": {
+                "en": "Business landing page for interior design",
+                "he": "דף נחיתה עסקי לעיצוב פנים"
+            },
             "url": "https://bar-app-self.vercel.app",
             "image": "images/barLogo.png",
             "type": "landing",
@@ -115,7 +149,10 @@
         {
             "id": "bina-bnya",
             "title": "Bina Bnya",
-            "description": "דף נחיתה עסקי לחברת בנייה • Business landing page",
+            "description": {
+                "en": "Business landing page for a construction company",
+                "he": "דף נחיתה עסקי לחברת בנייה"
+            },
             "url": "https://www-hzh6.vercel.app",
             "image": "images/fulllogo_nobuffer.jpeg",
             "type": "landing",
@@ -125,7 +162,10 @@
         {
             "id": "linoy",
             "title": "Linoy Haroush",
-            "description": "דף נחיתה עסקי למורה • Business landing page",
+            "description": {
+                "en": "Business landing page for a teacher",
+                "he": "דף נחיתה עסקי למורה"
+            },
             "url": "https://linoy-app.vercel.app",
             "image": "images/logoLinoy.png",
             "type": "landing",
@@ -135,7 +175,10 @@
         {
             "id": "portfolio-site",
             "title": "Portfolio Website",
-            "description": "Personal portfolio website showcasing skills and projects. Built with HTML & CSS.",
+            "description": {
+                "en": "Personal portfolio website showcasing skills and projects. Built with HTML & CSS.",
+                "he": "אתר תיק עבודות אישי המציג מיומנויות ופרויקטים. נבנה עם HTML ו-CSS."
+            },
             "url": "index.html",
             "image": "images/MyPortfolio.png",
             "type": "portfolio",
@@ -145,7 +188,10 @@
         {
             "id": "pacman",
             "title": "Pacman Game",
-            "description": "Simple game website using HTML, CSS, and JavaScript. Desktop version available, mobile coming soon.",
+            "description": {
+                "en": "Simple game website using HTML, CSS, and JavaScript. Desktop version available, mobile coming soon.",
+                "he": "משחק פשוט באתר באמצעות HTML, CSS ו-JavaScript. זמין במחשב, גרסת מובייל בקרוב."
+            },
             "url": "https://itayharoush.github.io/PacmanGame/",
             "image": "images/PacmanGame2.png",
             "type": "game",
@@ -153,19 +199,12 @@
             "tech": "HTML, CSS, JavaScript"
         },
         {
-            "id": "mylearn",
-            "title": "MyLearn Page",
-            "description": "Full-featured web app inspired by YouTube and Udemy: registration, login, password recovery, educational videos, ratings and comments. Built with HTML, CSS, JavaScript, PHP, SQL, and Bootstrap.",
-            "url": "https://itayharoush.great-site.net",
-            "image": "images/MyLearn.jpg",
-            "type": "webapp",
-            "tags": ["Full-Stack"],
-            "tech": "HTML, CSS, JS, PHP, SQL, Bootstrap"
-        },
-        {
             "id": "chefsync-1",
             "title": "ChefSync IL 1.0",
-            "description": "Catering management platform: daily/weekly orders, dynamic menu, inventory control, user and admin panels. Built with HTML, CSS, JavaScript, PHP, SQL, and Bootstrap.",
+            "description": {
+                "en": "Catering management platform: daily/weekly orders, dynamic menu, inventory control, user and admin panels. Built with HTML, CSS, JavaScript, PHP, SQL, and Bootstrap.",
+                "he": "פלטפורמת ניהול קייטרינג: הזמנות יומיות/שבועיות, תפריט דינמי, בקרת מלאי, פאנל משתמשים ומנהל. נבנה עם HTML, CSS, JavaScript, PHP, SQL ו-Bootstrap."
+            },
             "url": "https://tefenorders.great-site.net/landingPage.php?i=1",
             "image": "images/ChefSyncIL.png",
             "type": "webapp",
@@ -175,7 +214,10 @@
         {
             "id": "rotem-nails",
             "title": "Rotem Nails",
-            "description": "Smart booking platform for regular clients, simplifying appointments and salon scheduling.",
+            "description": {
+                "en": "Smart booking platform for regular clients, simplifying appointments and salon scheduling.",
+                "he": "פלטפורמת הזמנות חכמה ללקוחות קבועים, המפשטת תורים וניהול יומן בסלון."
+            },
             "url": "https://rotemamosnails.great-site.net/rhNails.php",
             "image": "images/rhNails.png",
             "type": "webapp",
@@ -185,7 +227,10 @@
         {
             "id": "itay-solutions",
             "title": "Itay's Haroush Solutions",
-            "description": "Professional portfolio showcasing Full Stack Developer expertise in front-end and back-end.",
+            "description": {
+                "en": "Professional portfolio showcasing Full Stack Developer expertise in front-end and back-end.",
+                "he": "תיק עבודות מקצועי המציג מומחיות Full Stack בפרונט-אנד ובק-אנד."
+            },
             "url": "https://www.itaysolutions.com/",
             "image": "images/itaySolutionsLogoIconOrange.png",
             "type": "portfolio",
@@ -195,7 +240,10 @@
         {
             "id": "contact-app",
             "title": "Itay ContactApp",
-            "description": "Contact Management Application with React frontend and Node.js/Express backend.",
+            "description": {
+                "en": "Contact Management Application with React frontend and Node.js/Express backend.",
+                "he": "אפליקציית ניהול אנשי קשר עם React בפרונט-אנד ו-Node.js/Express בבק-אנד."
+            },
             "url": "https://contact-app-orpin-one.vercel.app/",
             "image": "images/logoContactApp.png",
             "type": "webapp",
@@ -207,16 +255,18 @@
 
     <footer class="footer">
         <div class="info">
-            <a href="https://www.itaysolutions.com/" target="_blank">
-                <img src="images/1.jpeg" alt="Itay Solutions Logo" style="width: 75px; height: 75px; border-radius: 20%;">
-                <h6>&copy; 2025 Itay Haroush - Development Solutions</h6>
-                <h6>All rights reserved.</h6>
+            <a href="https://www.itaysolutions.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/itaySolutionsLogoIconOrange.png" data-i18n-alt="footer.logoAlt" alt="Itay Solutions Logo">
             </a>
+            <a href="#" class="footer-email" data-contact="email"></a>
+            <h6>&copy; 2025 <span data-i18n="footer.tagline">Itay Haroush - Development Solutions</span></h6>
+            <h6 data-i18n="footer.rights">All rights reserved.</h6>
         </div>
     </footer>
 
     <a id="top" href="#header1"><i class='bx bxs-to-top'></i></a>
 
+    <script src="i18n.js"></script>
     <script src="myProjects.js"></script>
 </body>
 </html>

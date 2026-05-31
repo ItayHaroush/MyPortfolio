@@ -1,70 +1,156 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Web Development & Software Solutions">
+
+    <meta name="description" data-i18n-content="meta.indexDesc" content="Professional Web Development & Software Solutions">
+
     <meta keywords= "Web Development, Software Solutions, Applications, Front-end, Custom Development">
+
     <meta name="author" content="Itay Haroush">
+
     <link rel="stylesheet" href="style.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="icon" href="images/user-square.png">
-    <title>Itay Haroush - Full Stack Developer</title>
+
+    <title data-i18n="meta.indexTitle">Itay Haroush - Full Stack Developer</title>
+
 </head>
 
+
+
 <body>
+
     <div id="header1">
+
         <nav class="navbar">
+
             <a href="index.html" class="logo">Portfolio.</a>
+
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="myProjects.html">Projects</a></li>
+
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+
+                <li><a href="myProjects.html" data-i18n="nav.projects">Projects</a></li>
+
+                <li class="lang-switcher">
+
+                    <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+
+                    <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">עב</button>
+
+                </li>
+
             </ul>
+
         </nav>
+
     </div>
 
+
+
     <section class="home">
+
         <div class="home-info">
-            <h2>Hello, It's me</h2>
+
+            <h2 data-i18n="home.greeting">Hello, I'm</h2>
+
             <h1>Itay Haroush</h1>
-            <h3>Professional <span>Web Developer</span> & <span>Software Engineer</span></h3>
-            <p>Crafting seamless web experiences with expertise in front-end and back-end development. Let's build something amazing together!</p>
+
+            <h3 data-i18n="home.roleHtml" data-i18n-html>Full-Stack Developer & <span>Digital Solutions Creator</span></h3>
+
+            <p data-i18n="home.bio">Building websites, business systems, and modern web applications with a focus on user experience, performance, and solving real problems.</p>
+
+            <a href="#" class="home-email" data-contact="email"></a>
+
+
 
             <div class="home-btns">
-                <a href="myProjects.html" class="btn">My Projects</a>
-                <a href="about.html#contact" class="btn btn-light">Contact Me</a>
+
+                <a href="myProjects.html" class="btn" data-i18n="home.projectsBtn">My Projects</a>
+
+                <a href="https://wa.me/972547466508" target="_blank" rel="noopener noreferrer" class="btn btn-light" data-contact="whatsapp" data-i18n="home.contactBtn">WhatsApp</a>
+
             </div>
 
+
+
             <div class="btn-sci">
+
                 <div class="sci">
+
                     <a href="https://www.facebook.com/itay.haroush/" target="_blank"><i class='bx bxl-facebook'></i></a>
+
                     <a href="https://github.com/itayharoush" target="_blank"><i class='bx bxl-github'></i></a>
+
                     <a href="https://www.linkedin.com/in/itay-haroush-94710b229/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://wa.me/+972547466508" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+
+                    <a href="#" data-contact="email" aria-label="Email"><i class='bx bx-envelope'></i></a>
+
+                    <a href="https://wa.me/972547466508" target="_blank" rel="noopener noreferrer" data-contact="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+
                 </div>
+
             </div>
+
         </div>
+
         
+
         <div class="img-item">
+
             <div class="zoom-img">
-                <img src="images/photo_2025-01-04_02-16-56.jpg" alt="Itay Haroush - Professional Developer">
+
+                <img src="images/photo_2025-01-04_02-16-56.jpg" data-i18n-alt="home.photoAlt" alt="Itay Haroush - Professional Developer">
+
             </div>
+
         </div>
+
     </section>
 
 
+
+
+
     <footer class="footer">
+
         <div class="info"> 
-            <a href="https://www.itaysolutions.com/" target="_blank">
-                <img style="width: 75px; height: 75px; border-radius: 20%;" src="images/1.jpeg" alt="Itay Solutions Logo">
-                <h6>&copy; 2025 Itay Haroush - Development Solutions</h6>
-                <h6>All rights reserved.</h6>
+
+            <a href="https://www.itaysolutions.com/" target="_blank" rel="noopener noreferrer">
+
+                <img src="images/itaySolutionsLogoIconOrange.png" data-i18n-alt="footer.logoAlt" alt="Itay Solutions Logo">
+
             </a>
+
+            <a href="#" class="footer-email" data-contact="email"></a>
+
+            <h6>&copy; 2025 <span data-i18n="footer.tagline">Itay Haroush - Development Solutions</span></h6>
+
+            <h6 data-i18n="footer.rights">All rights reserved.</h6>
+
         </div>
+
     </footer>
+
+
 
     <a id="top" href="#header1"><i class='bx bxs-to-top'></i></a>
 
+
+
+    <script src="i18n.js"></script>
+
 </body>
+
 </html>
+

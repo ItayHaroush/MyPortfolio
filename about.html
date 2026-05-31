@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Itay Haroush - Full Stack Developer">
+    <meta name="description" data-i18n-content="meta.aboutDesc" content="About Itay Haroush - Full Stack Developer">
     <meta name="keywords" content="Portfolio, CV, Engineering, Front-end, Software">
     <meta name="author" content="Itay Haroush">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="images/user-square.png">
-    <title>About Itay Haroush</title>
+    <title data-i18n="meta.aboutTitle">About Itay Haroush</title>
 </head>
 
 <body>
@@ -17,40 +17,75 @@
         <nav class="navbar">
             <a href="index.html" class="logo">Portfolio.</a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="myProjects.html">Projects</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="myProjects.html" data-i18n="nav.projects">Projects</a></li>
+                <li class="lang-switcher">
+                    <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">עב</button>
+                </li>
             </ul>
         </nav>
     </div>
 
     <section class="about">
         <div class="about-info">
-            <h2>About Me</h2>
-            <p>
-                I am Itay Haroush, a Full-Stack Software Engineering student based in Israel.
-                After several years managing a professional kitchen serving 150 diners daily, I decided to follow my true passion—technology and software development.
+            <h2 data-i18n="about.title">About Me</h2>
+            <p data-i18n="about.p1">
+                Hi, I'm Itay Haroush, a Full-Stack Software Engineering student and web developer from Israel.
             </p>
-            <p>
-                My journey started in 2023 at Kinneret Technological College (C#), and today I'm continuing my studies at the College of Management, Haifa, majoring in Full-Stack Software Engineering.
+            <p data-i18n="about.p2">
+                My professional journey began in a completely different world — managing a high-volume professional kitchen serving over 150 customers daily. That experience taught me how to work under pressure, solve problems quickly, manage complex operations, and focus on delivering results.
             </p>
-            <p>
-                I enjoy building end-to-end web applications with modern technologies (JavaScript, React, PHP, MySQL, HTML/CSS, C#, Java, TypeScript), focusing on usability, security, and performance.
-                Open to opportunities where I can grow as a Frontend or Full-Stack Developer and contribute to impactful projects.
+            <p data-i18n="about.p3">
+                In 2023, I decided to follow my passion for technology and software development. I started my studies at Kinneret Technological College and later continued my Software Engineering studies at The College of Management in Haifa, specializing in Full-Stack Development.
+            </p>
+            <p data-i18n="about.p4">
+                Today, I build modern web applications and business systems using technologies such as JavaScript, React, PHP, MySQL, TypeScript, Java, C, HTML and CSS. I enjoy turning ideas into real products — from planning and development to deployment and ongoing improvements. My focus is creating solutions that are clean, scalable, user-friendly, and built to solve real business problems.
+            </p>
+            <p data-i18n="about.p5">
+                Alongside my studies, I have developed multiple projects including business management systems, appointment scheduling platforms, restaurant ordering systems, and websites for real clients. I'm always looking to grow as a developer, take on new challenges, and contribute to meaningful products and teams.
             </p>
             
-            <h3>Skills</h3>
-            <ul id="skills">
-                <li>C#</li>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>CSS</li>
-                <li>PHP</li>
-                <li>SQL</li>
-            </ul>
+            <h3 data-i18n="about.skills">Skills</h3>
+            <div class="skills-section">
+                <div class="skill-group">
+                    <h4 data-i18n="skills.frontend">Frontend</h4>
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h4 data-i18n="skills.backend">Backend</h4>
+                    <ul class="skills-list">
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li data-i18n="skills.restApis">REST APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h4 data-i18n="skills.languages">Programming Languages</h4>
+                    <ul class="skills-list">
+                        <li>Java</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h4 data-i18n="skills.tools">Tools &amp; Technologies</h4>
+                    <ul class="skills-list">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>PWA</li>
+                        <li data-i18n="skills.responsive">Responsive Design</li>
+                        <li>Vercel</li>
+                        <li data-i18n="skills.vps">VPS Deployment</li>
+                    </ul>
+                </div>
+            </div>
             
             <div class="gallery"></div>
         </div>
@@ -58,25 +93,33 @@
 
     <section id="contact">
         <div class="contactme">
-            <form action="https://formspree.io/f/xqabeokz" method="POST">
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <h2 data-i18n="contact.title">Get in Touch</h2>
+            <p class="contact-intro" data-i18n="contact.intro">Have a project in mind? Edit the message below and I'll get back to you on WhatsApp.</p>
+            <a href="#" class="contact-email" data-contact="email"></a>
+            <div class="contact-form">
+                <label for="contact-message" class="contact-label" data-i18n="contact.messageLabel">Your message</label>
+                <textarea id="contact-message" rows="4" data-contact-message></textarea>
+                <a href="https://wa.me/972547466508" target="_blank" rel="noopener noreferrer" class="btn contact-whatsapp" data-contact="whatsapp-custom">
+                    <i class='bx bxl-whatsapp'></i>
+                    <span data-i18n="contact.whatsapp">Send on WhatsApp</span>
+                </a>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="info">
-            <a href="https://www.itaysolutions.com/" target="_blank">
-                <img src="images/1.jpeg" alt="Itay Solutions Logo" style="width: 75px; height: 75px; border-radius: 20%;">
-                <h6>&copy; 2025 Itay Haroush - Development Solutions</h6>
-                <h6>All rights reserved.</h6>
+            <a href="https://www.itaysolutions.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/itaySolutionsLogoIconOrange.png" data-i18n-alt="footer.logoAlt" alt="Itay Solutions Logo">
             </a>
+            <a href="#" class="footer-email" data-contact="email"></a>
+            <h6>&copy; 2025 <span data-i18n="footer.tagline">Itay Haroush - Development Solutions</span></h6>
+            <h6 data-i18n="footer.rights">All rights reserved.</h6>
         </div>
     </footer>
 
     <a id="top" href="#header1"><i class='bx bxs-to-top'></i></a>
 
+    <script src="i18n.js"></script>
 </body>
 </html>
